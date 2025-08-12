@@ -8,13 +8,14 @@
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
   --primary-border-color: #28292E;
-	--secondary-border-color: #56575A;
+    --secondary-border-color: #56575A;
 
   --title-color: #F0F0F0;
   --text-color: #9A9A9C;
   --link-color: #9A9A9C;
   --icon-color: #C7C8C9;
 }
+
 :root[data-theme='light'] {
   --primary-color: #0B0B0F;
 
@@ -27,6 +28,10 @@
 	--text-color: #28292E;
 	--link-color: #28292E;
 	--icon-color: #56575A;
+}
+
+html[data-theme='light'] .brand__logo {
+    filter: invert(1);
 }
 
 * {
@@ -48,6 +53,12 @@ i{
 
 a {
     text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .header {
@@ -130,6 +141,17 @@ a {
     gap: 1rem;
 }
 
+
+footer {
+   margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
 @media(min-width: 768px){
     
     .header{
@@ -144,13 +166,18 @@ a {
     }
 
     .header__nav {
-    display: flex;
+        display: flex;
+    }
 
     .header__nav,
     .header__toggle{
         min-width: 30%;
     }
-}
+
+    footer {
+        margin: 0;
+    }
+
 }
 @media (min-width: 992px){
 
