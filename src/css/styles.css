@@ -146,6 +146,7 @@ a:hover{
 
 footer {
    margin-bottom: 5rem;
+   color: rgb(255, 255, 255);
 }
 
 footer p {
@@ -182,9 +183,11 @@ footer p {
 
 }
 @media (min-width: 992px){
+  
 
 }
 @media (min-width: 1200px){
+     
 
 }
 @media (min-width: 1400px){
@@ -200,4 +203,5 @@ footer p {
         padding: 10rem 15rem 4rem;
     }
     
+  
 }
