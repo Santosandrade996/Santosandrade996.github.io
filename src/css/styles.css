@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 
 
@@ -49,6 +50,12 @@ body {
 
 i{
     color: var(--icon-color);
+}
+
+h1, h2, h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--primary-color);
 }
 
 a {
@@ -141,6 +148,10 @@ a:hover{
 
 .menu--principal {
     gap: 1rem;
+}
+
+main {
+    padding: 2.5rem 1rem;
 }
 
 
