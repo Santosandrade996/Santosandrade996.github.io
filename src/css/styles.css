@@ -58,6 +58,10 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
+p {
+    color: var(--primary-color);
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -150,20 +154,43 @@ a:hover{
     gap: 1rem;
 }
 
+.menu--social {
+    gap: 1rem;
+}
+
+.btn {
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.675rem;
+    border: 1px solid var(--primary-color);
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
+.btn--primary span {
+    color: var(--primary-color);
+}
+
+
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2.5rem 1rem;
 }
 
 
 footer {
    margin-bottom: 5rem;
-   color: rgb(255, 255, 255);
 }
 
 footer p {
     font-size: .875rem;
     text-align: center;
     padding: 1rem;
+    color: var(--primary-color);
 }
 
 @media(min-width: 768px){
