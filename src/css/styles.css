@@ -57,6 +57,11 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 h1, h2, h3 {
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -198,11 +203,14 @@ a:hover{
     border: 1px solid var(--primary-color);
 }
 
+main, .projects {
+    padding: 2.5rem 1rem;  
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.5rem 1rem;
 }
 
 .main__content1{
@@ -251,6 +259,15 @@ main {
     height: 3.4rem;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects__container {
+    
+}
 
 footer {
    margin-bottom: 5rem;
