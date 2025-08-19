@@ -48,8 +48,23 @@ body {
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
 i{
     color: var(--icon-color);
+}
+
+b {
+    font-weight: 400;
 }
 
 h1 {
@@ -60,6 +75,12 @@ h1 {
 h2 {
     font-size: 2rem;
     text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
 }
 
 h1, h2, h3 {
@@ -69,20 +90,12 @@ h1, h2, h3 {
     font-weight: 200;
 }
 
+p, span, li {
+    font-size: 1rem;
+}
+
 p {
-    font-size: 1.25rem;
     text-align: justify;
-    color: var(--primary-color);
-}
-
-a {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-a:hover{
-    color: var(--primary-color);
-    font-weight: 600;
 }
 
 .header {
@@ -117,8 +130,15 @@ a:hover{
     align-items: center;
     background: var(--primary-bg-color);
 }
+
 .menu__item {
     width: 100%;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .menu--mobile {
@@ -130,12 +150,10 @@ a:hover{
 }
 
 .menu--mobile .menu__link {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    gap: .5rem;
 }
 
 .menu__link.active .menu__icon, 
@@ -179,9 +197,11 @@ a:hover{
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
-    padding: 0.675rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
-    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
 .btn:hover {
@@ -203,7 +223,7 @@ a:hover{
     border: 1px solid var(--primary-color);
 }
 
-main, .projects {
+main, .projects, .about, .contact {
     padding: 2.5rem 1rem;  
 }
 
@@ -256,7 +276,7 @@ main {
 }
 
 .technologies__logo {
-    height: 3.4rem;
+    height: 2.4rem;
 }
 
 .projects {
@@ -266,8 +286,82 @@ main {
 }
 
 .projects__container {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card__description{
+    color: var(--title-color);
+}
+
+.card__list, .about__list {
+    margin-left: 1.25rem;
+}
+
+.card__item, .about__item{
+    list-style: disc;
+}
+
+.card__buttons, .description__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card__buttons .btn{
+    padding: .65rem 1.25rem;
+}
+
+.card__buttons .btn span {
+    font-size: 1rem;
+}
+
+.card__body .technologies__list{
+    gap: .75rem;
+}
+
+.card__body .technologies__item {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card__body .technologies__logo {
+  height: 2rem;
+}
+
+.projects .btn {
+    width: auto;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 
 footer {
    margin-bottom: 5rem;
@@ -310,8 +404,16 @@ footer p {
         font-size: 3rem;
     }
 
-    main{
+    main, .projects, .about{
         padding: 8rem 6rem 4rem 6rem;
+    }
+
+    .contact {
+        padding: 6rem;
+    }
+
+    .contact p {
+        width: 80%;
     }
 
     .main__content1{
@@ -332,11 +434,25 @@ footer p {
 }
 @media (min-width: 992px){
     
+    .projects__card{
+        flex-direction: row;
+    }
+
+    .projects__card.card--reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card__cover{
+        width: 55%;
+    }
+
+ 
     .about{
         gap: 5rem;
     }
     
-    .about__content1{
+    .about__content1, .about__content2{
         display: grid;
         grid-template-columns: 34% 60%;
         justify-content: flex-start;
@@ -346,6 +462,10 @@ footer p {
 
     .about__description h2 {
         text-align: left;
+    }
+
+    .description__buttons{
+        justify-content: flex-start;
     }
 }
 
@@ -393,6 +513,11 @@ footer p {
     p, span, li {
         font-size: 1.15rem;
     }
+
+    .card__buttons .btn,
+    .description__buttons .btn {
+        width: auto;
+    }
 }
 
 @media (min-width: 1400px){
@@ -408,7 +533,7 @@ footer p {
     font-size: 3.25rem;
    }
    
-    .header {
+   .header {
         padding: 1rem 15rem;
     }
 
@@ -419,6 +544,5 @@ footer p {
     .technologies, .projects, .about {
         padding: 10rem 15rem 4rem;
     }
-    
   
 }
