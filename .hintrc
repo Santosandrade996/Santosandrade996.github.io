@@ -4,9 +4,9 @@
   ],
   "hints": {
     "axe/name-role-value": [
-      "default",
+      "off",
       {
-        "link-name": "off"
+        "button-name": "off"
       }
     ],
     "button-type": "off",

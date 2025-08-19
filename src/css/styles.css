@@ -331,7 +331,7 @@ main {
 }
 
 .card__buttons .btn{
-    padding: .65rem 1.25rem;
+    padding: .65rem 1.25rem; 
 }
 
 .card__buttons .btn span {
@@ -352,7 +352,7 @@ main {
 }
 
 .projects .btn {
-    width: auto;
+    width: auto; 
     margin: auto;
 }
 
