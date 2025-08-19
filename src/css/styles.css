@@ -175,7 +175,13 @@ a:hover{
     background: transparent;
     border-radius: 3.125rem;
     padding: 0.675rem;
+    transition: ease-in-out .3s;
     border: 1px solid var(--primary-color);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn span, .btn i {
@@ -308,14 +314,83 @@ footer p {
 
 }
 @media (min-width: 992px){
-  
+    
+    .about{
+        gap: 5rem;
+    }
+    
+    .about__content1{
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
 
+    .about__description h2 {
+        text-align: left;
+    }
 }
+
 @media (min-width: 1200px){
-     
+    h2 {
+        font-size: 4rem;
+    }
 
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 12rem 6rem 2rem;
+    }
+
+    .main__content1 .btn {
+        width: auto;
+    }
+    
+    .technologies {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 6rem 4rem;
+    }
+
+    .technologies h2 {
+        font-size: 3rem;
+        width: 55%;
+    }
+
+    .technologies__list {
+        gap: 1rem;
+    }
+
+    .technologies__item {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .technologies__logo{
+        height: 3rem;
+    }
+
+    p, span, li {
+        font-size: 1.15rem;
+    }
 }
+
 @media (min-width: 1400px){
+   h1 {
+    font-size: 6.25rem;
+   }
+
+   h2 {
+    font-size: 4.5rem;
+   }
+
+   h3 {
+    font-size: 3.25rem;
+   }
+   
     .header {
         padding: 1rem 15rem;
     }
