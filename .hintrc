@@ -10,6 +10,7 @@
       }
     ],
     "button-type": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/structure": "off"
   }
 }
