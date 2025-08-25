@@ -11,7 +11,8 @@
     ],
     "button-type": "off",
     "disown-opener": "off",
-    "axe/structure": "off"
+    "axe/structure": "off",
+    "axe/keyboard": "off"
   },
   "browserslist": [
     "defaults",

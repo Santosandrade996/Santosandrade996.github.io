@@ -480,9 +480,10 @@ main {
   transform: rotate(180deg);
 }
 
-.contact {
+.contact{
+  background: var(--secondary-bg-color);
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -494,13 +495,14 @@ main {
   text-align: center;
 }
 
-.contact .btn {
+.contact .btn{
   width: auto;
 }
 
 .contact .email {
   text-transform: lowercase;
 }
+
 
 footer {
   margin-bottom: 5rem;
