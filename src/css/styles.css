@@ -16,8 +16,8 @@
 
 :root[data-theme='light'] {
   --primary-color: #1E3A8A; /* títulos */
-  --primary-bg-color: #FFFFFF; /* fundo */
-  --secondary-bg-color: #E0E7FF; 
+  --primary-bg-color: #d6d6d6; /* fundo */
+  --secondary-bg-color: #06279267; 
   --primary-border-color: #C7D2FE;
   --secondary-border-color: #A5B4FC;
 
@@ -136,6 +136,7 @@ p {
 .header__brand .brand__logo {
   width: 3.25rem;
   height: 3.25rem;
+  border-radius: 10rem;
 }
 
 #toggleTheme {
@@ -338,7 +339,7 @@ main {
 }
 
 .card__item, .about__list {
-  list-style: disc;
+  list-style: none;
 }
 
 .card__buttons, .description__buttons {
@@ -427,7 +428,7 @@ main {
   gap: .5rem;
 }
 
-.acordion__header {
+.accordion__header {
   width: 100%;
   display: flex;
   padding: 0.75rem 1rem;
@@ -480,24 +481,7 @@ main {
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-  border-top: 1px solid var(--primary-border-color);
-  border-bottom: 1px solid var(--primary-border-color);
-}
 
-.contact p {
-  text-align: center;
-}
-
-.contact .btn {
-  width: auto;
-}
-
-.contact .email {
-  text-transform: lowercase;
 }
 
 footer {
