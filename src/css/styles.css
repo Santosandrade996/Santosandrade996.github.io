@@ -3,7 +3,7 @@
 
 :root, :root[data-theme='dark'] {
   --primary-color: #FFD700; /* títulos */
-  --efects-color: #5a5a5a8c; /* efeitos */
+  --efects-color: #3d3d3de5; /* efeitos */
   --primary-bg-color: #000000; /* fundo */
   --secondary-bg-color: #1A1A1A; 
   --primary-border-color: #333333;
@@ -261,6 +261,24 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.main__content2 {
+ align-items: center;
+}
+
+
+.main__content2 img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-bottom: -50px;
+}
+
+.main__content2 img:hover {
+  transform: scale(1.05);
 }
 
 .technologies {
@@ -563,6 +581,12 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .main__content2 img {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: -20px;
   }
 
   .technologies {
