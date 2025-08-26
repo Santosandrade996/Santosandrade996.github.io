@@ -3,6 +3,7 @@
 
 :root, :root[data-theme='dark'] {
   --primary-color: #FFD700; /* títulos */
+  --efects-color: #5a5a5a8c; /* efeitos */
   --primary-bg-color: #000000; /* fundo */
   --secondary-bg-color: #1A1A1A; 
   --primary-border-color: #333333;
@@ -16,6 +17,7 @@
 
 :root[data-theme='light'] {
   --primary-color: #1E3A8A; /* títulos */
+  --efects-color: #0f1b865d; /* efeitos */
   --primary-bg-color: #d6d6d6; /* fundo */
   --secondary-bg-color: #06279267; 
   --primary-border-color: #C7D2FE;
@@ -217,15 +219,19 @@ p {
   background: transparent;
   border-radius: 3.125rem;
   border: none;
-  padding: 0.875rem 1.5rem;
+  padding: 0.875rem;
   transition: ease-in-out .3s;
   cursor: pointer;
   color: var(--primary-color);
 }
 
+button:hover, .btn:hover {
+  background: var(--efects-color);
+}
+
 .btn:hover {
-  transform: scale(1.05);
-  transition: ease-in-out .3s;
+ transform: scale(1.05);
+ transition: ease-in-out .3s;
 }
 
 .btn span, .btn i {
