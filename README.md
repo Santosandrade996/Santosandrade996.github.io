@@ -15,7 +15,7 @@ Aqui você encontra os projetos que desenvolvi, minhas habilidades e um pouco ma
 ---
 
 ## 📌 Sobre o Projeto
-Este portfólio foi criado com o objetivo de apresentar meus conhecimentos em **Desenvolvimento Web** e servir como venho desenvolvendo outros projetos e que tenho construindo ao longo da minha jornada de estudos e carreira.
+Este portfólio foi criado com o objetivo de apresentar meus conhecimentos em **Desenvolvimento Web** e servir como venho desenvolvendo outros projetos e que tenho construindo ao longo da minha jornada de estudos e carreira. Este site esde disponivel para mobile e desktop!
 
 ---
 
